@@ -1,20 +1,13 @@
 import { useState, useEffect } from "react";
-import Test1 from "../Test1";
+import Hero from "../Hero/Hero";
 import Test2 from "../Test2";
 
 function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [scrollDirection, setScrollDirection] = useState(0);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  const slideComponents = [
-    <Test1 />,
-    <Test2 />,
-    <Test1 />,
-    <Test2 />,
-    <Test1 />,
-    <Test2 />,
-    <Test1 />,
-  ];
+  const slideComponents = [<Hero />, <Test2 />];
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slideComponents.length);
@@ -52,8 +45,23 @@ function Slider() {
     }
   }, []);
 
+  useEffect(() => {
+    document.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  const handleMouseMove = (event: MouseEvent) => {
+    setMousePosition({ x: event.clientX, y: event.clientY });
+  };
+
   return (
-    <div className="slider">
+    <div
+      className="slider"
+      style={{ background: generateRadialGradientBackground(mousePosition) }}
+    >
       <div className="slider__container">
         {slideComponents.map((slide, index) => (
           <div
@@ -85,6 +93,16 @@ function Slider() {
       </div>
     </div>
   );
+}
+
+function generateRadialGradientBackground(mousePosition: {
+  x: number;
+  y: number;
+}) {
+  const centerX = (mousePosition.x / window.innerWidth) * 100;
+  const centerY = (mousePosition.y / window.innerHeight) * 100;
+
+  return `radial-gradient(circle at ${centerX}% ${centerY}%, #7c88ff, #7681f2, #707be5, #6a74d8, #646ecb)`;
 }
 
 export default Slider;

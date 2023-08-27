@@ -4,7 +4,7 @@ interface NavProp {
 
 function Navbar({ slideNum }: NavProp) {
   return (
-    <nav className={`navbar ${slideNum === 0 ? "first-slide" : ""}`}>
+    <nav className={`navbar ${slideNum === 0 ? "first-slide" : "other-slide"}`}>
       <div className="navbar__logo">
         <a href="/">
           <h1>

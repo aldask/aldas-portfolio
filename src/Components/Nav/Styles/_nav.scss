@@ -24,6 +24,9 @@
   &.first-slide {
     display: flex;
   }
+  &.other-slide {
+    animation: slideOut 1s ease-in-out;
+  }
 
   a {
     text-decoration: none;
@@ -93,8 +96,10 @@
 @keyframes slideOut {
   from {
     transform: translateX(0);
+    display: flex;
   }
   to {
     transform: translateX(-100%);
+    display: none;
   }
 }

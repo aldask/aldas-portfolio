@@ -1,6 +1,10 @@
-function Navbar() {
+interface NavProp {
+  slideNum: number;
+}
+
+function Navbar({ slideNum }: NavProp) {
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${slideNum === 0 ? "first-slide" : ""}`}>
       <div className="navbar__logo">
         <a href="/">
           <h1>

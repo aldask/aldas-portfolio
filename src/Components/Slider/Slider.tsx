@@ -1,13 +1,16 @@
 import { useState, useEffect } from "react";
 import Hero from "../Hero/Hero";
-import Test2 from "../Test2";
+import About from "../About/About";
+import Projects from "../Projects/Projects";
+import Contacts from "../Contacts/Contacts";
+import Navbar from "../Nav/Navbar";
 
 function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [scrollDirection, setScrollDirection] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  const slideComponents = [<Hero />, <Test2 />];
+  const slideComponents = [<Hero />, <About />, <Projects />, <Contacts />];
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slideComponents.length);
@@ -79,6 +82,7 @@ function Slider() {
             {slide}
           </div>
         ))}
+        <Navbar slideNum={currentSlide} />
       </div>
       <div className="slider__dots">
         {slideComponents.map((_, index) => (

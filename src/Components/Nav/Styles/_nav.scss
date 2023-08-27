@@ -1,0 +1,74 @@
+.logo-color {
+  color: #646ecb;
+  font-weight: 700;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  gap: 10rem;
+  width: 220px;
+  background-color: rgba(141, 141, 141, 0.452);
+  padding: 30px 10px;
+  box-shadow: 0px 1px 5px #999;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  &__logo {
+    font-size: 1.2rem;
+
+    h1 {
+      color: black;
+    }
+  }
+
+  &__links {
+    &--buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      a {
+        position: relative;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        overflow: hidden;
+        transition: color 0.3s ease-in-out;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #646ecb;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 0.3s ease-in-out;
+        }
+
+        &:hover {
+          color: #646ecb;
+        }
+
+        &:hover::before {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+    }
+  }
+}

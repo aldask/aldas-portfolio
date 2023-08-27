@@ -1,1 +1,16 @@
 @import "./reset";
+@import "./fonts";
+
+// Components styles
+@import "../Components/Nav/Styles/nav";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: $title-font;
+  overflow: hidden;
+}

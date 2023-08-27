@@ -3,6 +3,7 @@
 
 // Components styles
 @import "../Components/Nav/Styles/nav";
+@import "../Components/Slider/Styles/slider";
 
 html {
   scroll-behavior: smooth;
@@ -13,4 +14,9 @@ body {
   flex-direction: column;
   font-family: $title-font;
   overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 5rem 20rem;
 }

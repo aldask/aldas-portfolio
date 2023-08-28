@@ -1,6 +1,5 @@
 import HeroImg from "../../Images/Hero/Hero.png";
 
-
 function Hero() {
   return (
     <section className="hero">
@@ -14,16 +13,16 @@ function Hero() {
               <p className="hero__content__side1__content">
                 Welcome to my portfolio website, a platform where I proudly
                 exhibit my various projects and creations. Feel free to explore
-                and discover the innovative solutions I've crafted using React.
-                Whether you're interested in web development, user interfaces,
-                or cutting-edge design, you've come to the right place. Join me
-                on this journey as I continue to push the boundaries of what's
-                possible in the world of front-end development.
+                and discover the innovative solutions I've crafted. Whether
+                you're interested in web development, user interfaces, or
+                cutting-edge design, you've come to the right place. Join me on
+                this journey as I continue to push the boundaries of what's
+                possible in the world of front-end development!
               </p>
             </div>
           </div>
           <div className="hero__content__side2">
-            <img src={HeroImg} alt="" />
+            <img src={HeroImg} alt="hero-img" />
           </div>
         </div>
       </div>

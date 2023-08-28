@@ -1,7 +1,7 @@
 .hero {
   padding: 5rem 0 0 0;
 
-  @media screen and (max-width: 1670px) {
+  @media screen and (max-width: 1280px) {
     padding: 2rem 0 0 0;
   }
 
@@ -13,7 +13,7 @@
     align-items: flex-start;
     width: 100%;
 
-    @media screen and (max-width: 1650px) {
+    @media screen and (max-width: 1280px) {
       flex-direction: column;
     }
 
@@ -23,7 +23,7 @@
       z-index: 6;
       animation: slideAndFade 1.5s ease-in-out forwards;
 
-      @media screen and (max-width: 1650px) {
+      @media screen and (max-width: 1280px) {
         width: 100%;
       }
 
@@ -31,7 +31,7 @@
         padding: 0 50px;
         max-width: 70%;
 
-        @media screen and (max-width: 1650px) {
+        @media screen and (max-width: 1280px) {
           max-width: 100%;
           width: 100%;
           padding: 0 0 1rem 0;
@@ -41,7 +41,7 @@
           font-size: 8rem;
           margin-bottom: 1.5rem;
 
-          @media screen and (max-width: 1650px) {
+          @media screen and (max-width: 1280px) {
             font-size: 4rem;
           }
         }
@@ -69,7 +69,7 @@
         bounceAnimation 3s infinite ease-in-out;
       z-index: 5;
 
-      @media screen and (max-width: 1650px) {
+      @media screen and (max-width: 1280px) {
         position: relative;
         transform: translateY(0);
         padding-top: 0;

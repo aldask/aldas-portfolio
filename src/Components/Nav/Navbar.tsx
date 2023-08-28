@@ -1,19 +1,30 @@
+import { useState } from "react";
+
 interface NavProp {
   slideNum: number;
 }
 
 function Navbar({ slideNum }: NavProp) {
+  const [mobileNav, setMobileNav] = useState(false);
+
+  const handleMobileNav = () => {
+    setMobileNav(!mobileNav);
+  };
+
   return (
     <>
       {/* Nav for mobile */}
-      <nav
-        className="navbar__mobile">
-        <div className="navbar__1slide__logo">
-          <a href="/">
-            <h1>
-              <span className="logo-color">&#123; &#125; </span></h1>
-          </a>
+      <nav className="navbar__mobile">
+        <div className="navbar__mobile__logo">
+          <span className="logo-color" onClick={handleMobileNav}>
+            &#123; &#125;{" "}
+          </span>
         </div>
+        <ul className={`navbar__mobile__links ${mobileNav ? "active" : ""}`}>
+          <li>
+            <a href="/">About Me</a>
+          </li>
+        </ul>
       </nav>
       {/* Nav for first slide */}
       <nav

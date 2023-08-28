@@ -7,87 +7,65 @@
 
 .navbar__mobile {
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
-  padding: 15px;
-  margin: 10px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 15px;
   z-index: 999;
-  background-color: rgba(253, 88, 88, 0.87);
+  background-color: rgba(252, 252, 252, 0.87);
   border-radius: 50%;
-  // transform: translateX(-100%);
-  //opacity: 0;
-  //transition: all 0.7s ease-in-out;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   animation: slideIn 0.7s ease-in-out;
 
   @media screen and (max-width: 736px) {
     display: flex;
   }
 
-  // &.first-slide {
-  //   //transform: translateX(0);
-  //   //opacity: 1;
-  //   display: flex;
-  // }
-  // &.other-slide {
-  //   animation: slideOut 0.7s ease-in-out;
-  // }
-
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
   &__logo {
-    font-size: 1.2rem;
-
-    h1 {
-      font-size: 2rem;
-      font-weight: 500;
-      color: black;
-    }
+    font-size: 1rem;
   }
 
   &__links {
-    &--buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    cursor: auto;
+    transform: translateY(100%);
+    transition: transform 0.2s ease-in-out;
 
-      a {
-        position: relative;
-        padding: 10px 20px;
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        overflow: hidden;
-        transition: color 0.3s ease-in-out;
+    li a {
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 2rem;
+    }
 
-        &::before {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 2px;
-          background-color: #646ecb;
-          transform: scaleX(0);
-          transform-origin: right;
-          transition: transform 0.3s ease-in-out;
-        }
-
-        &:hover {
-          color: #646ecb;
-        }
-
-        &:hover::before {
-          transform: scaleX(1);
-          transform-origin: left;
-        }
-      }
+    &.active {
+      transform: translateY(0);
     }
   }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
 }
 
 // Version for 1 slide
@@ -107,20 +85,14 @@
   padding: 30px 20px;
   box-shadow: 0px 1px 5px #999;
   z-index: 999;
-  // transform: translateX(-100%);
-  //opacity: 0;
-  //transition: all 0.7s ease-in-out;
   animation: slideIn 0.7s ease-in-out;
 
   &.first-slide {
-    //transform: translateX(0);
-    //opacity: 1;
     display: flex;
 
     @media screen and (max-width: 736px) {
       display: none;
     }
-
   }
   &.other-slide {
     animation: slideOut 0.7s ease-in-out;
@@ -129,6 +101,7 @@
   a {
     text-decoration: none;
     color: white;
+    cursor: pointer;
   }
 
   &__logo {
@@ -145,6 +118,7 @@
     &--buttons {
       display: flex;
       flex-direction: column;
+      font-size: 1.25rem;
       gap: 2rem;
 
       a {
@@ -221,20 +195,20 @@
   transform: translateY(-100%);
   opacity: 0;
   transition: all 0.7s ease-in-out;
-  //animation: slideIn 0.7s ease-in-out;
 
   &.two-slides {
     transform: translateY(0);
     opacity: 1;
-    //display: flex;
   }
-  &.other-slide {
-    //animation: slideOut 0.7s ease-in-out;
+
+  @media screen and (max-width: 736px) {
+    display: none;
   }
 
   a {
     text-decoration: none;
     color: white;
+    cursor: pointer;
   }
 
   &__logo {
@@ -251,6 +225,7 @@
     &--buttons {
       display: flex;
       flex-direction: row;
+      font-size: 1.25rem;
       gap: 2rem;
 
       a {

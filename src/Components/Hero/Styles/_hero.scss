@@ -1,5 +1,9 @@
 .hero {
-  padding: 40px 0;
+  padding: 5rem 0 0 0;
+
+  @media screen and (max-width: 1670px) {
+    padding: 2rem 0 0 0;
+  }
 
   &__content {
     position: relative;
@@ -29,6 +33,7 @@
 
         @media screen and (max-width: 1650px) {
           max-width: 100%;
+          width: 100%;
         }
 
         h1 {
@@ -69,6 +74,7 @@
         padding-top: 0;
         top: 0;
         right: 0;
+        overflow: auto;
         animation: fadeIn 1.5s ease-in-out,
           bounceAnimationMobile 3s infinite ease-in-out;
       }

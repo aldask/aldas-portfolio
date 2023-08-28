@@ -1,5 +1,6 @@
 .hero {
   padding: 40px 0;
+  height: auto;
 
   &__content {
     position: relative;
@@ -9,18 +10,35 @@
     align-items: flex-start;
     width: 100%;
 
+    @media screen and (max-width: 1650px) {
+      flex-direction: column;
+    }
+
     &__side1 {
       position: relative;
       width: 65%;
+      z-index: 6;
       animation: slideAndFade 1.5s ease-in-out forwards;
+
+      @media screen and (max-width: 1650px) {
+        width: 100%;
+      }
 
       &__text {
         padding: 0 50px;
         max-width: 70%;
 
+        @media screen and (max-width: 1650px) {
+          max-width: 100%;
+        }
+
         h1 {
           font-size: 8rem;
           margin-bottom: 1.5rem;
+
+          @media screen and (max-width: 1650px) {
+            font-size: 4rem;
+          }
         }
 
         p {
@@ -42,7 +60,19 @@
       max-width: 1000px;
       overflow: hidden;
       padding-top: 250px;
-      animation: fadeIn 1.5s ease-in-out, bounceAnimation 3s infinite ease-in-out;
+      animation: fadeIn 1.5s ease-in-out,
+        bounceAnimation 3s infinite ease-in-out;
+      z-index: 5;
+
+      @media screen and (max-width: 1650px) {
+        position: relative;
+        transform: translateY(0);
+        padding-top: 0;
+        top: 0;
+        right: 0;
+        animation: fadeIn 1.5s ease-in-out,
+          bounceAnimationMobile 3s infinite ease-in-out;
+      }
 
       img {
         width: 100%;
@@ -86,10 +116,21 @@
 }
 
 @keyframes bounceAnimation {
-  0%, 100% {
-    transform: translateY(calc(-50% - 10px)); /* Start and end at bounce height */
+  0%,
+  100% {
+    transform: translateY(calc(-50% - 10px));
   }
   50% {
-    transform: translateY(calc(-50% - 20px)); /* Bounce up higher */
+    transform: translateY(calc(-50% - 20px));
+  }
+}
+
+@keyframes bounceAnimationMobile {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }

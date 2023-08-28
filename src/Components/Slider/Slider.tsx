@@ -60,10 +60,20 @@ function Slider() {
     setMousePosition({ x: event.clientX, y: event.clientY });
   };
 
+  function setBackgroundGradient(mousePosition: {
+    x: number;
+    y: number;
+  }) {
+    const centerX = (mousePosition.x / window.innerWidth) * 100;
+    const centerY = (mousePosition.y / window.innerHeight) * 100;
+  
+    return `radial-gradient(circle at ${centerX}% ${centerY}%, #7c88ff, #7681f2, #707be5, #6a74d8, #646ecb)`;
+  }
+
   return (
     <div
       className="slider"
-      style={{ background: generateRadialGradientBackground(mousePosition) }}
+      style={{ background: setBackgroundGradient(mousePosition) }}
     >
       <div className="slider__container">
         {slideComponents.map((slide, index) => (
@@ -97,16 +107,6 @@ function Slider() {
       </div>
     </div>
   );
-}
-
-function generateRadialGradientBackground(mousePosition: {
-  x: number;
-  y: number;
-}) {
-  const centerX = (mousePosition.x / window.innerWidth) * 100;
-  const centerY = (mousePosition.y / window.innerHeight) * 100;
-
-  return `radial-gradient(circle at ${centerX}% ${centerY}%, #7c88ff, #7681f2, #707be5, #6a74d8, #646ecb)`;
 }
 
 export default Slider;

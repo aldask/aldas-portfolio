@@ -5,6 +5,9 @@
 @import "../Components/Nav/Styles/nav";
 @import "../Components/Slider/Styles/slider";
 @import "../Components/Hero/Styles/hero";
+@import "../Components/About/Styles/about";
+@import "../Components/Projects/Styles/projects";
+@import "../Components/Contacts/Styles/contacts";
 
 html {
   scroll-behavior: smooth;
@@ -15,6 +18,11 @@ body {
   flex-direction: column;
   font-family: $title-font;
   overflow: hidden;
+}
+
+.hero-container {
+  margin: 0 auto;
+  padding: 5rem 20rem;
 }
 
 .container {

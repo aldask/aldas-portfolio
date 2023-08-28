@@ -1,1 +1,54 @@
 @import "./reset";
+@import "./fonts";
+
+// Components styles
+@import "../Components/Nav/Styles/nav";
+@import "../Components/Slider/Styles/slider";
+@import "../Components/Hero/Styles/hero";
+@import "../Components/About/Styles/about";
+@import "../Components/Projects/Styles/projects";
+@import "../Components/Contacts/Styles/contacts";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: $title-font;
+  overflow: hidden;
+}
+
+.hero-container {
+  margin: 0 auto;
+  padding: 2rem 20rem;
+
+  @media screen and (max-width: 1550px) {
+    padding: 2rem 15rem;
+  }
+
+  @media screen and (max-width: 1150px) {
+    padding: 2rem 2rem 2rem 15rem;
+  }
+
+  @media screen and (max-width: 736px) {
+    padding: 2rem;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 5rem 20rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: $title-font;
+  color: #fff;
+}
+
+p {
+  color: #dbdbdb;
+}

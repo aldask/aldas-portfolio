@@ -1,8 +1,11 @@
 import "./Styles/global.scss";
+import Slider from "./Components/Slider/Slider";
 
 function App() {
   return (
-    <div className="App">some baddass content will be here in a while</div>
+    <>
+      <Slider />
+    </>
   );
 }
 

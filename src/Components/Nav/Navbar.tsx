@@ -5,6 +5,16 @@ interface NavProp {
 function Navbar({ slideNum }: NavProp) {
   return (
     <>
+      {/* Nav for mobile */}
+      <nav
+        className="navbar__mobile">
+        <div className="navbar__1slide__logo">
+          <a href="/">
+            <h1>
+              <span className="logo-color">&#123; &#125; </span></h1>
+          </a>
+        </div>
+      </nav>
       {/* Nav for first slide */}
       <nav
         className={`navbar__1slide ${
@@ -31,11 +41,7 @@ function Navbar({ slideNum }: NavProp) {
         </div>
       </nav>
       {/* Nav for other slides */}
-      <nav
-        className={`navbar__2slide ${
-          slideNum >= 1 ? "two-slides" : ""
-        }`}
-      >
+      <nav className={`navbar__2slide ${slideNum >= 1 ? "two-slides" : ""}`}>
         <div className="navbar__2slide__logo">
           <a href="/">
             <h1>

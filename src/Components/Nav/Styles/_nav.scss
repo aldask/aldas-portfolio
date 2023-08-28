@@ -3,6 +3,95 @@
   font-weight: 700;
 }
 
+// Mobile version
+
+.navbar__mobile {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 15px;
+  margin: 10px;
+  z-index: 999;
+  background-color: rgba(253, 88, 88, 0.87);
+  border-radius: 50%;
+  // transform: translateX(-100%);
+  //opacity: 0;
+  //transition: all 0.7s ease-in-out;
+  animation: slideIn 0.7s ease-in-out;
+
+  @media screen and (max-width: 736px) {
+    display: flex;
+  }
+
+  // &.first-slide {
+  //   //transform: translateX(0);
+  //   //opacity: 1;
+  //   display: flex;
+  // }
+  // &.other-slide {
+  //   animation: slideOut 0.7s ease-in-out;
+  // }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  &__logo {
+    font-size: 1.2rem;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      color: black;
+    }
+  }
+
+  &__links {
+    &--buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      a {
+        position: relative;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        overflow: hidden;
+        transition: color 0.3s ease-in-out;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #646ecb;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 0.3s ease-in-out;
+        }
+
+        &:hover {
+          color: #646ecb;
+        }
+
+        &:hover::before {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+    }
+  }
+}
+
+// Version for 1 slide
+
 .navbar__1slide {
   display: none;
   flex-direction: column;
@@ -27,6 +116,11 @@
     //transform: translateX(0);
     //opacity: 1;
     display: flex;
+
+    @media screen and (max-width: 736px) {
+      display: none;
+    }
+
   }
   &.other-slide {
     animation: slideOut 0.7s ease-in-out;

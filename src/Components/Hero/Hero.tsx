@@ -4,7 +4,7 @@ import HeroImg from "../../Images/Hero/Hero.png";
 function Hero() {
   return (
     <section className="hero">
-      <div className="container">
+      <div className="hero-container">
         <div className="hero__content">
           <div className="hero__content__side1">
             <div className="hero__content__side1__text">

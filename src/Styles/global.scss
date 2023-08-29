@@ -39,12 +39,44 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 8rem;
   font-weight: 800;
   font-family: $title-font;
   color: #fff;
+
+  @media screen and (max-width: 1660px) {
+    font-size: 7.5rem;
+  }
+
+  @media screen and (max-width: 1262px) {
+    font-size: 5rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  color: #fff;
+
+  @media screen and (max-width: 1660px) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: 1262px) {
+    font-size: 1.8rem;
+  }
 }
 
 p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 400;
   color: #dbdbdb;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 }

@@ -1,0 +1,132 @@
+.contacts {
+  width: 100%;
+  padding-top: 5rem;
+
+  @media (max-width: 768px) {
+    padding-top: 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      padding: 0 20px;
+    }
+
+    &__title {
+      h1 {
+        margin-bottom: 3rem;
+        letter-spacing: 4px;
+        transform: translateY(-20px);
+        opacity: 0;
+        animation: slideUp 1s ease-out forwards 0.5s;
+      }
+
+      h2,
+      p {
+        max-width: 800px;
+        margin: 0 auto 50px;
+        opacity: 0.9;
+        transform: translateY(20px);
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards 1s;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      transform: translateY(20px);
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards 1.5s;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+    button {
+      border: 3px solid transparent;
+      background-color: transparent;
+      padding: 18px 36px;
+      border-radius: 50px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+
+      @media (max-width: 768px) {
+        padding: 12px 28px;
+        font-size: 1rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+
+    .linkedin {
+      border-color: #007bff;
+      color: #007bff;
+
+      &:hover {
+        background-color: #007bff;
+        animation: glowingLinkedin 1.5s infinite linear;
+      }
+    }
+
+    .resume {
+      border-color: #17a2b8;
+
+      &:hover {
+        background-color: #17a2b8;
+        animation: glowingResume 1.5s infinite linear;
+      }
+    }
+  }
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes glowingLinkedin {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+  }
+}
+
+@keyframes glowingResume {
+  0% {
+    box-shadow: 0 0 5px rgba(23, 163, 184, 0.9);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(23, 163, 184, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(23, 163, 184, 0.9);
+  }
+}

@@ -34,28 +34,19 @@
         width: 100%;
 
         h1 {
-          font-size: 8rem;
           margin-bottom: 1.5rem;
           width: 60%;
 
           @media screen and (max-width: 1660px) {
             width: 100%;
-            font-size: 7.5rem;
           }
 
           @media screen and (max-width: 1262px) {
-            font-size: 5rem;
             margin-bottom: 1rem;
-          }
-
-          @media screen and (max-width: 500px) {
-            font-size: 2rem;
           }
         }
 
         p {
-          font-size: 1.2rem;
-          line-height: 1.6;
           color: #d6d6d6;
           animation: fadeInUp 1.5s ease-in-out forwards 0.5s;
           width: 65%;
@@ -63,15 +54,10 @@
           @media screen and (max-width: 1100px) {
             width: 80%;
             padding: 0 0 2rem 0;
-            //font-size: 1rem;
           }
 
           @media screen and (max-width: 900px) {
             width: 100%;
-          }
-
-          @media screen and (max-width: 768px) {
-            font-size: 1rem;
           }
         }
       }

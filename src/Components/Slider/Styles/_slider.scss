@@ -1,5 +1,4 @@
 .slider {
-  //position: absolute;
   top: 0;
   right: 0;
   width: 100vw;
@@ -20,17 +19,13 @@
 
   &__container {
     display: flex;
-    //width: calc(100vw - 12vw);
 
     &--slide {
       width: 100vw;
       display: none;
-      //opacity: 0;
-      //transition: all 3s ease-in-out;
 
       &.active {
         display: flex;
-        //opacity: 1;
       }
     }
   }

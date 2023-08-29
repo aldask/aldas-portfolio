@@ -25,20 +25,30 @@
 
     &__button {
       display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #333;
+      border: none;
+      padding: 15px 30px;
       cursor: pointer;
-      z-index: 999;
-      padding: 12px;
-      border-radius: 5px;
-      background-color: rgba(252, 252, 252, 0.24);
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      transition: all 0.3 ease-in-out;
+      transition: all 0.5s ease-in-out;
+
+      @media screen and (max-width: 450px) {
+        padding: 7px 15px;
+      }
 
       h1 {
-        color: black;
-        font-size: 1.5rem;
+        color: white;
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 0;
+
+        @media screen and (max-width: 450px) {
+          font-size: 1.5rem;
+        }
 
         &:hover {
-          color: #646ecb;
+          transform: scale(1.05);
         }
       }
     }

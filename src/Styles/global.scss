@@ -22,17 +22,13 @@ body {
 
 .hero-container {
   margin: 0 auto;
-  padding: 2rem 20rem;
+  padding: 1rem 12rem;
 
-  @media screen and (max-width: 1550px) {
-    padding: 2rem 15rem;
+  @media screen and (max-width: 1450px) {
+    padding: 3.5rem;
   }
 
   @media screen and (max-width: 1150px) {
-    padding: 2rem 2rem 2rem 15rem;
-  }
-
-  @media screen and (max-width: 736px) {
     padding: 2rem;
   }
 }

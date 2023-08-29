@@ -1,14 +1,12 @@
 .slider {
-  //position: absolute;
   top: 0;
   right: 0;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  overflow-y: auto;
-  overflow-x: hidden;
+  justify-content: flex-start;
+  overflow: hidden;
   background: radial-gradient(
     circle,
     #7c88ff,
@@ -18,39 +16,63 @@
     #646ecb
   );
 
-  &__container {
+  &__top {
     display: flex;
-    //width: calc(100vw - 12vw);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
 
-    &--slide {
-      width: 100vw;
-      display: none;
-      //opacity: 0;
-      //transition: all 3s ease-in-out;
+    &__button {
+      display: flex;
+      cursor: pointer;
+      z-index: 999;
+      padding: 12px;
+      border-radius: 5px;
+      background-color: rgba(252, 252, 252, 0.24);
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      transition: all 0.3 ease-in-out;
 
-      &.active {
-        display: flex;
-        //opacity: 1;
+      h1 {
+        color: black;
+        font-size: 1.5rem;
+
+        &:hover {
+          color: #646ecb;
+        }
+      }
+    }
+
+    &__dots {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      //padding: 20px;
+
+      &--dot {
+        width: 10px;
+        height: 10px;
+        background-color: #ccc;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+
+        &.active {
+          background-color: #333;
+        }
       }
     }
   }
 
-  &__dots {
+  &__container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0 0 3rem 0;
 
-    &--dot {
-      width: 10px;
-      height: 10px;
-      background-color: #ccc;
-      border-radius: 50%;
-      margin: 0 5px;
-      cursor: pointer;
+    &--slide {
+      //width: 100vw;
+      display: none;
 
       &.active {
-        background-color: #333;
+        display: flex;
       }
     }
   }

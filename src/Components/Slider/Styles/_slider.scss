@@ -69,10 +69,12 @@
 
     &--slide {
       //width: 100vw;
+      width: 100%;
       display: none;
 
       &.active {
         display: flex;
+        width: 100vw;
       }
     }
   }

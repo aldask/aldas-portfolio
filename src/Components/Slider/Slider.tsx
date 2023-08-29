@@ -23,6 +23,10 @@ function Slider() {
     );
   };
 
+  const handleButton = () => {
+    setCurrentSlide(0);
+  };
+
   useEffect(() => {
     const handleScroll = (event: WheelEvent) => {
       if (event.deltaY > 0) {
@@ -82,7 +86,7 @@ function Slider() {
       style={{ background: setBackgroundGradient(mousePosition) }}
     >
       <div className="slider__top">
-        <div className="slider__top__button">
+        <div className="slider__top__button" onClick={handleButton}>
           <h1>
             <span className="logo-color">&#123; &#125; </span>Aldas.dev
           </h1>

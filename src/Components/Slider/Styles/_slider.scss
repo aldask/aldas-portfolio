@@ -5,9 +5,8 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  overflow-y: auto;
-  overflow-x: hidden;
+  justify-content: flex-start;
+  overflow: hidden;
   background: radial-gradient(
     circle,
     #7c88ff,
@@ -26,17 +25,22 @@
 
     &__button {
       display: flex;
-  cursor: pointer;
-  z-index: 999;
-  padding: 12px;
-  border-radius: 5px;
-  background-color: rgba(252, 252, 252, 0.87);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      cursor: pointer;
+      z-index: 999;
+      padding: 12px;
+      border-radius: 5px;
+      background-color: rgba(252, 252, 252, 0.24);
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      transition: all 0.3 ease-in-out;
 
-  h1 {
-    color: black;
-    font-size: 1.5rem;
-  }
+      h1 {
+        color: black;
+        font-size: 1.5rem;
+
+        &:hover {
+          color: #646ecb;
+        }
+      }
     }
 
     &__dots {
@@ -64,7 +68,7 @@
     display: flex;
 
     &--slide {
-      width: 100vw;
+      //width: 100vw;
       display: none;
 
       &.active {

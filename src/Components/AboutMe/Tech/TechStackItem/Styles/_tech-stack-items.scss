@@ -1,0 +1,39 @@
+.tech-stack__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+    background 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+    box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  animation: fadeInUp 1s ease-out 0.8s both;
+
+  &:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.4);
+  }
+
+  &__icon {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

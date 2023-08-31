@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Hero from "../Hero/Hero";
-import About from "../About/About";
+import AboutMe from "../AboutMe/Main/AboutMe";
 import Projects from "../Projects/Projects";
 import Contacts from "../Contacts/Contacts";
 import Navbar from "../Nav/Navbar";
@@ -10,7 +10,7 @@ function Slider() {
   const [scrollDirection, setScrollDirection] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  const slideComponents = [<Hero />, <About />, <Projects />, <Contacts />];
+  const slideComponents = [<Hero />, <AboutMe />, <Projects />, <Contacts />];
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slideComponents.length);

@@ -6,12 +6,10 @@ const AboutMeContent: React.FC = () => (
       <h1 className="about-me__title">About Me</h1>
       <p className="about-me__text">
         I am passionate about crafting clean and efficient code, always eager to
-        explore new technologies and create impactful digital experiences.
-      </p>
-      <p className="about-me__text">
-        With a focus on building user-friendly applications that leave an
-        impression, I embrace challenges and push the boundaries of what's
-        possible in front-end development.
+        explore new technologies and create impactful digital experiences. With
+        a focus on building user-friendly applications that leave an impression,
+        I embrace challenges and push the boundaries of what's possible in
+        front-end development.
       </p>
     </div>
   </div>

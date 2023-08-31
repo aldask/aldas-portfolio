@@ -10,6 +10,10 @@
 
     h1 {
       margin-bottom: 3rem;
+
+      @media screen and (max-width: 375px) {
+        margin-bottom: 1.5rem;
+      }
     }
 
     p {

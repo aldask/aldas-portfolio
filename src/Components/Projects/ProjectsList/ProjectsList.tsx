@@ -1,5 +1,6 @@
 import React from "react";
 import { Project } from "../../../Data/projectsData";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ProjectCard from "../ProjectCard/ProjectCard";
 
 interface ProjectsListProps {

@@ -41,6 +41,17 @@
           font-size: 1.8rem;
           margin-bottom: 1rem;
           font-weight: bold;
+
+          &--github-url {
+            display: flex;
+            align-items: center;
+
+            &--github-logo {
+              width: 24px;
+              height: 24px;
+              margin-left: 8px;
+            }
+          }
         }
 
         &--project-description {

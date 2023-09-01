@@ -14,12 +14,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <img src={project.imageSrc} alt={project.title} />
         <div className="project-card__image__overlay">
           <div className="project-card__image__overlay__project-info">
-            <h3 className="project-card__image__overlay__project-info--project-title">
-              {project.title}
-            </h3>
-            <p className="project-card__image__overlay__project-info--project-description">
-              {project.description}
-            </p>
+            <div className="project-card__image__overlay__project-info--title">
+              <h3 className="project-card__image__overlay__project-info--project-title">
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  className="project-card__image__overlay__project-info--project-title--github-url"
+                >
+                  {project.title}
+                  <img
+                    src="github"
+                    alt="GitHub Logo"
+                    className="project-card__image__overlay__project-info--project-title--github-url--github-logo"
+                  />
+                </a>
+              </h3>
+            </div>
             <p className="project-card__image__overlay__project-info--project-technologies">
               Technologies:{" "}
               {project.technologies.map(

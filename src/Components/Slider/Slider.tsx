@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Hero from "../Hero/Hero";
 import AboutMe from "../AboutMe/Main/AboutMe";
 import Projects from "../Projects/Projects";
-import Contacts from "../Contacts/Contacts";
+import Contacts from "../Contacts/Main/Contacts";
 import Navbar from "../Nav/Navbar";
 
 function Slider() {

@@ -6,7 +6,6 @@
 @import "../Components/Slider/Styles/slider";
 @import "../Components/Hero/Styles/hero";
 @import "../Components/Projects/Styles/projects";
-@import "../Components/Contacts/Styles/contacts";
 
 // About me
 @import "../Components/AboutMe/Main/Styles/about-me";
@@ -14,6 +13,10 @@
 @import "../Components/AboutMe/Tech/TechStackItem/Styles/tech-stack-items";
 @import "../Components/AboutMe/Tech/TechStackList/Styles/tech-stack-item";
 
+// Contacts
+@import "../Components/Contacts/ContactsBox/Styles/contacts-box";
+@import "../Components/Contacts/ContactsBoxContent/Styles/contacts-box-content";
+@import "../Components/Contacts/ContactButtons/Styles/contacts-buttons";
 
 html {
   scroll-behavior: smooth;

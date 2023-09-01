@@ -1,11 +1,15 @@
 @import "./reset";
 @import "./fonts";
+@import '~font-awesome/css/font-awesome.css';
 
 // Components styles
 @import "../Components/Nav/Styles/nav";
 @import "../Components/Slider/Styles/slider";
 @import "../Components/Hero/Styles/hero";
-@import "../Components/Projects/Styles/projects";
+
+//Projects
+@import "../Components/Projects/ProjectsBox/Styles/projects-box";
+@import "../Components/Projects/ProjectCard/Styles/project-card";
 
 // About me
 @import "../Components/AboutMe/Main/Styles/about-me";

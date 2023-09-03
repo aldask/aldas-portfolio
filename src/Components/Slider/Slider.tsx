@@ -1,16 +1,35 @@
-import { useState, useEffect } from "react";
+//Slides
 import Hero from "../Hero/Hero";
 import AboutMe from "../AboutMe/Main/AboutMe";
-import Projects from "../Projects/Projects";
+import Project from "../Projects/index";
 import Contacts from "../Contacts/Main/Contacts";
-import Navbar from "../Nav/Navbar";
+
+//Needs to be sorted
+
+import { useState, useEffect } from "react";
+
+import { IconDefinition } from "@fortawesome/fontawesome-common-types";
+import { faReact, faVuejs, faCss3 } from "@fortawesome/free-brands-svg-icons";
+import CarOLanding from "../../Images/Projects/CarO.png";
 
 function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [scrollDirection, setScrollDirection] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  const slideComponents = [<Hero />, <AboutMe />, <Projects />, <Contacts />];
+  const slideComponents = [
+    <Hero />,
+    <AboutMe />,
+    <Project
+      title="56"
+      projectTitle="CarO"
+      projectGithub="https://github.com/aldask/aldas-portfolio"
+      projectDescription="description"
+      projectTech={[faReact, faCss3]}
+      projectImg={CarOLanding}
+    />,
+    <Contacts />,
+  ];
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slideComponents.length);
@@ -120,7 +139,6 @@ function Slider() {
             {slide}
           </div>
         ))}
-        {/* <Navbar slideNum={currentSlide} /> */}
       </div>
     </div>
   );

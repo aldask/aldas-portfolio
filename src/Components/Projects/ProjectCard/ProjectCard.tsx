@@ -1,42 +1,40 @@
 import React from "react";
-import { Project } from "../../../Data/projectsData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 
-interface ProjectCardProps {
-  project: Project;
+export interface ProjectCardProps {
+  projectTitle: string;
+  projectImg: string;
+  projectDescription: string;
+  projectTech: IconDefinition[];
+  projectGithub: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  projectTitle,
+  projectImg,
+  projectDescription,
+  projectTech,
+  projectGithub,
+}) => {
   return (
-    <div className="project-card">
-      <div className="project-card__image">
-        <img src={project.imageSrc} alt={project.title} />
-        <div className="project-card__image__overlay">
-          <div className="project-card__image__overlay__project-info">
-            <div className="project-card__image__overlay__project-info--title">
-              <h3 className="project-card__image__overlay__project-info--project-title">
-                <a
-                  href={project.githubLink}
-                  target="_blank"
-                  className="project-card__image__overlay__project-info--project-title--github-url"
-                >
-                  {project.title}
-                  <img
-                    src="github"
-                    alt="GitHub Logo"
-                    className="project-card__image__overlay__project-info--project-title--github-url--github-logo"
-                  />
-                </a>
-              </h3>
-            </div>
-            <p className="project-card__image__overlay__project-info--project-technologies">
-              Technologies:{" "}
-              {project.technologies.map(
-                (icon: IconDefinition, index: number) => (
-                  <FontAwesomeIcon key={index} icon={icon} />
-                )
-              )}
+    <div className="projects__content">
+      <div className="project-card">
+        <a href={projectGithub} target="_blank" rel="noopener noreferrer">
+          <img src={projectImg} alt={projectTitle} />
+        </a>
+        <div className="project-info">
+          <div className="info-box">
+            <h3>{projectTitle}</h3>
+            <p>{projectDescription}</p>
+            {projectTech.map((icon: IconDefinition, index: number) => (
+              <FontAwesomeIcon key={index} icon={icon} />
+            ))}
+            <p>
+              <a href={projectGithub} target="_blank">
+                <FontAwesomeIcon icon={faGithub} size="lg" />
+              </a>
             </p>
           </div>
         </div>

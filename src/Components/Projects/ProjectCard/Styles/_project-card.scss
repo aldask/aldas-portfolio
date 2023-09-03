@@ -1,85 +1,58 @@
 .project-card {
-  width: 500px;
-  margin-bottom: 2rem;
   position: relative;
-  border-radius: 10px;
+  display: flex;
+  width: 800px;
+  height: 750px;
   overflow: hidden;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-
-  &__image {
-    overflow: hidden;
-    border-radius: 10px 10px 0 0;
-    position: relative;
-    transition: all 0.3s ease;
-
-    img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-    }
-
-    &__overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-      opacity: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transition: all 0.3s ease;
-
-      &__project-info {
-        color: #fff;
-        text-align: center;
-
-        &--project-title {
-          font-size: 1.8rem;
-          margin-bottom: 1rem;
-          font-weight: bold;
-
-          &--github-url {
-            display: flex;
-            align-items: center;
-
-            &--github-logo {
-              width: 24px;
-              height: 24px;
-              margin-left: 8px;
-            }
-          }
-        }
-
-        &--project-description {
-          font-size: 1.2rem;
-          margin-bottom: 1rem;
-        }
-
-        &--project-technologies {
-          font-size: 1rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-      }
-    }
-  }
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.3);
+    width: 1100px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
 
-    .project-card__image {
-      transform: scale(1.05);
-    }
+  img {
+    width: 800px;
+    height: 750px;
+    object-fit: cover;
+    object-position: top;
+    transition: object-position 7s ease-in-out, width 0.3s ease-in-out;
+  }
 
-    .project-card__image__overlay {
-      opacity: 1;
-      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+  &:hover img {
+    object-position: bottom;
+    width: 600px;
+  }
+}
+
+.project-info {
+  background-color: #0e1a35;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 0.3s;
+  height: 100%;
+  box-sizing: border-box;
+
+  .github-link {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    color: #f3c30d;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #ffd700;
     }
   }
 }

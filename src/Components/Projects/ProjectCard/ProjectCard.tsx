@@ -34,7 +34,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <div className="project-card__project-info--info-box--pic-box">
             <h3>Build stack:</h3>
             {projectTech.map((icon) => (
-              <img key={icon} src={icon} />
+              <div
+                key={icon}
+                className="project-card__project-info--info-box--pic-box--icon-container"
+              >
+                <img src={icon} alt={icon} />
+              </div>
             ))}
           </div>
           <div className="project-card__project-info--info-box__bottom">

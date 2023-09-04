@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   width: 800px;
-  height: 750px;
+  height: 600px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   border: 1px solid #e4e4e4;
@@ -16,7 +16,7 @@
 
   img {
     width: 800px;
-    height: 750px;
+    height: 600px;
     object-fit: cover;
     object-position: top;
     transition: object-position 7s ease-in-out, width 0.3s ease-in-out;
@@ -26,33 +26,58 @@
     object-position: bottom;
     width: 600px;
   }
-}
 
-.project-info {
-  background-color: #0e1a35;
-  color: white;
-  padding: 20px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  transition: transform 0.3s;
-  height: 100%;
-  box-sizing: border-box;
-
-  .github-link {
+  &__project-info {
+    background-color: #0e1a35;
+    color: white;
+    padding: 20px;
+    width: 100%;
     display: flex;
-    align-items: center;
-  }
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.3s;
 
-  a {
-    color: #f3c30d;
-    text-decoration: none;
-    transition: color 0.3s;
+    &--info-box {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
-    &:hover {
-      color: #ffd700;
+      h3 {
+        font-size: 2rem;
+      }
+
+      &--pic-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+
+        img {
+          width: 2rem !important;
+          height: 2rem !important;
+          margin-left: 5px;
+        }
+      }
+
+      &__bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        a {
+          color: #e4b303;
+          text-decoration: none;
+          font-size: 1.3rem;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #947e00;
+          }
+        }
+      }
     }
   }
 }

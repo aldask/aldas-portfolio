@@ -1,14 +1,17 @@
 import React from "react";
 import ProjectBox from "./ProjectsBox/ProjectBox";
 import ProjectCard from "./ProjectCard/ProjectCard";
-import { IconDefinition } from "@fortawesome/fontawesome-common-types";
+import test1 from "../../../Images/Tech/css3.svg"
+import test2 from "../../../Images/Tech/js.svg"
+import test3 from "../../../Images/Tech/html5.svg"
+
 
 export interface ProjectProps {
   title: string;
   projectTitle: string;
   projectImg: string;
   projectDescription: string;
-  projectTech: IconDefinition[];
+  projectTech: string[];
   projectGithub: string;
 }
 

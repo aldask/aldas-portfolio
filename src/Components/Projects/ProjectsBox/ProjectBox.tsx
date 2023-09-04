@@ -10,7 +10,7 @@ const ProjectBox: React.FC<ProjectBoxProps> = ({ children, title }) => {
     <section className="projects">
       <div className="hero-container">
         <h1>{title}</h1>
-        {children}
+        <div className="projects__content">{children}</div>
       </div>
     </section>
   );

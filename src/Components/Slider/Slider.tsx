@@ -1,16 +1,27 @@
-//Slides
+// Slides
 import Hero from "../Hero/Hero";
 import AboutMe from "../AboutMe/Main/AboutMe";
 import Project from "../Projects/index";
 import Contacts from "../Contacts/Main/Contacts";
 
+// Tech stack
+import HTML5 from "../../Images/Tech/html5.svg";
+import CSS3 from "../../Images/Tech/css3.svg";
+import JS from "../../Images/Tech/js.svg";
+import ReactIcon from "../../Images/Tech/react.svg";
+import Sass from "../../Images/Tech/sass.svg";
+import TS from "../../Images/Tech/ts.svg";
+
+
+
 //Needs to be sorted
 
 import { useState, useEffect } from "react";
 
-import { IconDefinition } from "@fortawesome/fontawesome-common-types";
-import { faReact, faVuejs, faCss3 } from "@fortawesome/free-brands-svg-icons";
+// import { IconDefinition } from "@fortawesome/fontawesome-common-types";
+// import { faReact, faVuejs, faCss3 } from "@fortawesome/free-brands-svg-icons";
 import CarOLanding from "../../Images/Projects/CarO.png";
+import iron from "../../Images/Projects/IronGym.png";
 
 function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -21,11 +32,11 @@ function Slider() {
     <Hero />,
     <AboutMe />,
     <Project
-      title="56"
+      title="CarO"
       projectTitle="CarO"
-      projectGithub="https://github.com/aldask/aldas-portfolio"
-      projectDescription="description"
-      projectTech={[faReact, faCss3]}
+      projectGithub="https://github.com/aldask/car-rental"
+      projectDescription="A CarO website is an online platform that allows users to rent cars for personal or business use. The website provides an easy-to-use interface for searching, comparing, and reserving cars from a wide selection of vehicles that vary in make, model, size, and price."
+      projectTech={[ReactIcon, TS, CSS3]}
       projectImg={CarOLanding}
     />,
     <Contacts />,

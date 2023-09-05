@@ -1,8 +1,8 @@
 // Slides
 import Hero from "../Hero/Hero";
-import AboutMe from "../AboutMe/Main/AboutMe";
+import AboutMe from "../AboutMe";
 import Project from "../Projects/index";
-import Contacts from "../Contacts/Main/Contacts";
+import Contacts from "../Contacts";
 
 // Tech stack
 import HTML5 from "../../Images/Tech/html5.svg";
@@ -11,8 +11,6 @@ import JS from "../../Images/Tech/js.svg";
 import ReactIcon from "../../Images/Tech/react.svg";
 import Sass from "../../Images/Tech/sass.svg";
 import TS from "../../Images/Tech/ts.svg";
-
-
 
 //Needs to be sorted
 

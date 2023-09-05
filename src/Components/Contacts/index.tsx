@@ -1,7 +1,7 @@
 import React from "react";
-import ContactsBox from "../ContactsBox/ContactsBox";
-import ContactsBoxContent from "../ContactsBoxContent/ContactsBoxContent";
-import ContactsButtons from "../ContactButtons/ContactsButtons";
+import ContactsBox from "./ContactsBox/ContactsBox";
+import ContactsBoxContent from "./ContactsBoxContent/ContactsBoxContent";
+import ContactsButtons from "./ContactButtons/ContactsButtons";
 
 const Contacts: React.FC = () => {
   return (

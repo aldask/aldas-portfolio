@@ -1,6 +1,16 @@
 .projects {
   width: 100%;
 
+  h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
   &__content {
     margin-top: 1rem;
     width: 100%;

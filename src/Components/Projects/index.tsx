@@ -9,6 +9,7 @@ export interface ProjectProps {
   projectDescription: string;
   projectTech: string[];
   projectGithub: string;
+  projectDemo: string;
 }
 
 const Project: React.FC<ProjectProps> = ({ title, ...projectCardProps }) => (

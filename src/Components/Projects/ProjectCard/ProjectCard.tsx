@@ -9,6 +9,7 @@ export interface ProjectCardProps {
   projectDescription: string;
   projectTech: string[];
   projectGithub: string;
+  projectDemo: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -17,6 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   projectDescription,
   projectTech,
   projectGithub,
+  projectDemo,
 }) => {
   return (
     <div className="project-card">
@@ -46,7 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <a href={projectGithub} target="_blank">
               <FontAwesomeIcon icon={faGithub} size="lg" />
             </a>
-            <a href={projectGithub} target="_blank">
+            <a href={projectDemo} target="_blank">
               <FontAwesomeIcon icon={faExternalLinkAlt} size="lg" />
             </a>
           </div>

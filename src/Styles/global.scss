@@ -1,14 +1,17 @@
 @import "./reset";
 @import "./fonts";
+@import '~font-awesome/css/font-awesome.css';
 
 // Components styles
-@import "../Components/Nav/Styles/nav";
 @import "../Components/Slider/Styles/slider";
 @import "../Components/Hero/Styles/hero";
-@import "../Components/Projects/Styles/projects";
+
+//Projects
+@import "../Components/Projects/ProjectsBox/Styles/projects-box";
+@import "../Components/Projects/ProjectCard/Styles/project-card";
 
 // About me
-@import "../Components/AboutMe/Main/Styles/about-me";
+@import "../Components/AboutMe/AboutMeBox/Styles/about-me-box";
 @import "../Components/AboutMe/AboutMeContent/Styles/about-me-content";
 @import "../Components/AboutMe/Tech/TechStackItem/Styles/tech-stack-items";
 @import "../Components/AboutMe/Tech/TechStackList/Styles/tech-stack-item";
@@ -34,7 +37,7 @@ body {
   padding: 1rem 12rem;
 
   @media screen and (max-width: 1450px) {
-    padding: 3.5rem;
+    padding: 0 3.5rem;
   }
 
   @media screen and (max-width: 1150px) {
@@ -48,7 +51,7 @@ body {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 7rem;
   font-weight: 800;
   font-family: $title-font;
   color: #fff;

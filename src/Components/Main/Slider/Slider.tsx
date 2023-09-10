@@ -16,8 +16,8 @@ const Slider: React.FC<SliderProp> = ({ children }) => {
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
-      onSlideChange={() => console.log("slide change")}
-      className="blast"
+      // onSlideChange={() => console.log("slide change")}
+      className="slide"
     >
       {children}
     </Swiper>

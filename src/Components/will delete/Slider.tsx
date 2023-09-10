@@ -1,5 +1,5 @@
 // Slides
-import Hero from "../Hero/Hero";
+import Hero from "../Hero";
 import AboutMe from "../AboutMe/index";
 import Project from "../Projects/index";
 import Contacts from "../Contacts/index";

@@ -1,13 +1,10 @@
 import "./Styles/global.scss";
-import Slider from "./Components/Slider/Slider";
-import { SwiperSlide } from "swiper/react";
-import Cucumber from "./Components/Cucumber";
+import Main from "./Components/Main";
 
 function App() {
   return (
     <>
-      {/* <Slider /> */}
-      <Cucumber />
+      <Main />
     </>
   );
 }

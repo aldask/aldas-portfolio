@@ -1,10 +1,19 @@
 @import "./reset";
 @import "./fonts";
-@import '~font-awesome/css/font-awesome.css';
+@import "~font-awesome/css/font-awesome.css";
 
-// Components styles
-@import "../Components/Slider/Styles/slider";
-@import "../Components/Hero/Styles/hero";
+/* Main component START */
+@import "../Components/Main/Styles/index";
+@import "../Components/Main/Slider/Styles/slider";
+/* Main component END */
+
+/* Hero component START */
+@import "../Components/Hero/HeroBox/Styles/heroBox";
+@import "../Components/Hero/HeroContent/Styles/heroContent";
+@import "../Components/Hero/HeroSide1/Styles/heroSide1";
+@import "../Components/Hero/HeroSide2/Styles/heroSide2";
+@import "../Components/Hero/HeroSide3/Styles/heroSide3";
+/* Hero component END */
 
 //Projects
 @import "../Components/Projects/ProjectsBox/Styles/projects-box";
@@ -30,6 +39,7 @@ body {
   flex-direction: column;
   font-family: $title-font;
   overflow: hidden;
+  background: linear-gradient(45deg, #0f4c75, #3282b8);
 }
 
 .hero-container {

@@ -1,5 +1,5 @@
 // Slides
-import Hero from "../Hero/Hero";
+import Hero from "../Hero";
 import AboutMe from "../AboutMe/index";
 import Project from "../Projects/index";
 import Contacts from "../Contacts/index";
@@ -11,6 +11,11 @@ import JS from "../../Images/Tech/js.svg";
 import ReactIcon from "../../Images/Tech/react.svg";
 import Sass from "../../Images/Tech/sass.svg";
 import TS from "../../Images/Tech/ts.svg";
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
 
 //Needs to be sorted
 

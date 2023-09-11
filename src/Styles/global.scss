@@ -12,7 +12,6 @@
 @import "../Components/Hero/HeroContent/Styles/heroContent";
 @import "../Components/Hero/HeroSide1/Styles/heroSide1";
 @import "../Components/Hero/HeroSide2/Styles/heroSide2";
-@import "../Components/Hero/HeroSide3/Styles/heroSide3";
 /* Hero component END */
 
 //Projects
@@ -101,4 +100,9 @@ p {
   @media screen and (max-width: 768px) {
     font-size: 1rem;
   }
+}
+
+.logo-color {
+  font-weight: 700;
+  color: #0073e6;
 }

@@ -1,7 +1,6 @@
 import React, { ReactNode, useState } from "react";
 import { Swiper } from "swiper/react";
 import {
-  Navigation,
   Pagination,
   Scrollbar,
   A11y,
@@ -25,13 +24,12 @@ const Slider: React.FC<SliderProp> = ({ children }) => {
   return (
     <Swiper
       //@ts-ignore
-      modules={[Navigation, Pagination, Scrollbar, A11y, Mousewheel, Keyboard]}
+      modules={[Pagination, Scrollbar, A11y, Mousewheel, Keyboard]}
       slidesPerView={1}
-      navigation
       mousewheel={true}
       keyboard={true}
       pagination={{ clickable: true }}
-      loop={true} // Enable infinite loop
+      loop={true}
       className="slide"
       onSlideChange={handleSlideChange}
     >

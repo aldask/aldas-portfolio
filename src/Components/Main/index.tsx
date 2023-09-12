@@ -31,8 +31,9 @@ function Main() {
       className="main"
       style={{ background: setBackgroundGradient(mousePosition) }}
     >
-      <FlyingObject objectSizeMin={400} objectSizeMax={800} color="#3498db" />
-      <FlyingObject objectSizeMin={50} objectSizeMax={300} color="blue" />
+      <FlyingObject objectSizeMin={200} objectSizeMax={500} color="#3498db" />
+      <FlyingObject objectSizeMin={100} objectSizeMax={250} color="#2980b9" />
+      <FlyingObject objectSizeMin={75} objectSizeMax={150} color="#4a90e2" />
       <div className="main__top">
         <div className="main__top__left">
           <h1>

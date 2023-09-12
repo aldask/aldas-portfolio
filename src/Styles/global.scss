@@ -1,10 +1,19 @@
 @import "./reset";
 @import "./fonts";
-@import '~font-awesome/css/font-awesome.css';
+@import "~font-awesome/css/font-awesome.css";
 
-// Components styles
-@import "../Components/Slider/Styles/slider";
-@import "../Components/Hero/Styles/hero";
+/* Main component START */
+@import "../Components/Main/Styles/index";
+@import "../Components/Main/Slider/Styles/slider";
+@import "../Components/Main/FlyingObject/Styles/flyingObj";
+/* Main component END */
+
+/* Hero component START */
+@import "../Components/Hero/HeroBox/Styles/heroBox";
+@import "../Components/Hero/HeroContent/Styles/heroContent";
+@import "../Components/Hero/HeroSide1/Styles/heroSide1";
+@import "../Components/Hero/HeroSide2/Styles/heroSide2";
+/* Hero component END */
 
 //Projects
 @import "../Components/Projects/ProjectsBox/Styles/projects-box";
@@ -91,4 +100,9 @@ p {
   @media screen and (max-width: 768px) {
     font-size: 1rem;
   }
+}
+
+.logo-color {
+  font-weight: 700;
+  color: #0073e6;
 }

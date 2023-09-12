@@ -1,10 +1,11 @@
+import React, { useState, useEffect } from "react";
 import "./Styles/global.scss";
-import Slider from "./Components/Slider/Slider";
+import Main from "./Components/Main";
 
 function App() {
   return (
     <>
-      <Slider />
+      <Main />
     </>
   );
 }

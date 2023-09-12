@@ -9,6 +9,10 @@
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 
+  @media screen and (max-width: 1800px) {
+    height: 500px;
+  }
+
   @media screen and (max-width: 1078px) {
     width: 600px;
     height: 400px;
@@ -22,6 +26,11 @@
   &:hover {
     width: 1100px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+    @media screen and (max-width: 1500px) {
+      width: 600px;
+      height: 400px;
+    }
 
     @media screen and (max-width: 1078px) {
       width: 600px;
@@ -38,6 +47,10 @@
     object-fit: cover;
     object-position: top;
     transition: object-position 7s ease-in-out, width 0.3s ease-in-out;
+
+    @media screen and (max-width: 1800px) {
+      height: 500px;
+    }
 
     @media screen and (max-width: 1078px) {
       width: 600px;
@@ -70,7 +83,7 @@
   }
 
   &__project-info {
-    background-color: #0e1a35;
+    background: linear-gradient(135deg, #266489, #5232ac);
     color: white;
     padding: 20px;
     width: 100%;

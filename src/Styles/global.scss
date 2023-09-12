@@ -5,6 +5,7 @@
 /* Main component START */
 @import "../Components/Main/Styles/index";
 @import "../Components/Main/Slider/Styles/slider";
+@import "../Components/Main/FlyingObject/Styles/flyingObj";
 /* Main component END */
 
 /* Hero component START */
@@ -12,7 +13,6 @@
 @import "../Components/Hero/HeroContent/Styles/heroContent";
 @import "../Components/Hero/HeroSide1/Styles/heroSide1";
 @import "../Components/Hero/HeroSide2/Styles/heroSide2";
-@import "../Components/Hero/HeroSide3/Styles/heroSide3";
 /* Hero component END */
 
 //Projects
@@ -39,7 +39,6 @@ body {
   flex-direction: column;
   font-family: $title-font;
   overflow: hidden;
-  background: linear-gradient(45deg, #0f4c75, #3282b8);
 }
 
 .hero-container {
@@ -101,4 +100,9 @@ p {
   @media screen and (max-width: 768px) {
     font-size: 1rem;
   }
+}
+
+.logo-color {
+  font-weight: 700;
+  color: #0073e6;
 }

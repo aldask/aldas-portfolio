@@ -5,9 +5,10 @@
   max-width: 75%;
   height: auto;
   padding-right: 12rem;
-  animation: fadeIn 1.5s cubic-bezier(0.165, 0.84, 0.44, 1),
-    bounce 3s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  //animation: fadeIn 1.5s ease-in-out, bounce 3s infinite ease-in-out;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards,
+    float 4s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
   z-index: 5;
 
   @media screen and (max-width: 1450px) {
@@ -36,20 +37,22 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    top: 45%;
+    transform: translateY(-10px) scale(0.8);
   }
   to {
     opacity: 1;
-    top: 50%;
+    transform: translateY(0) scale(1);
   }
 }
 
-@keyframes bounce {
-  0%,
-  100% {
+@keyframes float {
+  0% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

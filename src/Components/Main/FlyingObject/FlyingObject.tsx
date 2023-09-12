@@ -31,7 +31,7 @@ const FlyingObject: React.FC<FlyingObjectProps> = ({
   useEffect(() => {
     randomLocation();
 
-    const intervalTime = setInterval(randomLocation, 6000);
+    const intervalTime = setInterval(randomLocation, 4000);
 
     return () => clearInterval(intervalTime);
   }, []);

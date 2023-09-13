@@ -15,7 +15,7 @@
       letter-spacing: 4px;
       transform: translateY(-20px);
       opacity: 0;
-      animation: slideUp 1s ease-out forwards 0.5s;
+      animation: slideUp 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards 0.5s;
 
       @media screen and (max-width: 478px) {
         font-size: 3.2rem;
@@ -29,19 +29,12 @@
       opacity: 0.9;
       transform: translateY(20px);
       opacity: 0;
-      animation: fadeIn 1s ease-out forwards 1s;
+      animation: slideUp 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards 1s;
     }
   }
 }
 
 @keyframes slideUp {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
   to {
     transform: translateY(0);
     opacity: 1;

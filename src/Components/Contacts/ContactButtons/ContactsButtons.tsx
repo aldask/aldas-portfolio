@@ -3,11 +3,13 @@ import React from "react";
 interface ContactsButtonsProps {
   linkedinUrl: string;
   resumeUrl: string;
+  githubUrl: string;
 }
 
 const ContactsButtons: React.FC<ContactsButtonsProps> = ({
   linkedinUrl,
   resumeUrl,
+  githubUrl,
 }) => {
   return (
     <div className="contacts__content__buttons">
@@ -19,6 +21,11 @@ const ContactsButtons: React.FC<ContactsButtonsProps> = ({
       <button className="resume">
         <a href={resumeUrl} target="_blank">
           Resume
+        </a>
+      </button>
+      <button className="github">
+        <a href={githubUrl} target="_blank">
+          Github
         </a>
       </button>
     </div>

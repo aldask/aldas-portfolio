@@ -22,9 +22,15 @@
   }
 
   @media screen and (max-width: 1100px) {
-    display: none;
+    margin-top: 0;
+    min-width: 60%;
+    height: 200px;
     left: auto;
     padding: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 
   img {

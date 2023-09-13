@@ -1,4 +1,5 @@
 import React, { ReactNode, useState } from "react";
+import FlyingObject from "../FlyingObject/FlyingObject";
 import { Swiper } from "swiper/react";
 import {
   Pagination,
@@ -33,6 +34,9 @@ const Slider: React.FC<SliderProp> = ({ children }) => {
       className="slide"
       onSlideChange={handleSlideChange}
     >
+      <FlyingObject objectSizeMin={200} objectSizeMax={350} color="#3498db" />
+      <FlyingObject objectSizeMin={150} objectSizeMax={250} color="#2980b9" />
+      <FlyingObject objectSizeMin={75} objectSizeMax={150} color="#4a90e2" />
       <div key={activeIndex}>{children}</div>
     </Swiper>
   );

@@ -5,43 +5,32 @@
   text-align: center;
   width: 100%;
 
-  @media (max-width: 768px) {
-    padding: 0;
-  }
-
   &__title {
     h1 {
-      margin-bottom: 3rem;
-      letter-spacing: 4px;
+      margin-bottom: 1.5rem;
       transform: translateY(-20px);
       opacity: 0;
-      animation: slideUp 1s ease-out forwards 0.5s;
+      animation: slideUp 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards 0.5s;
 
-      @media screen and (max-width: 478px) {
-        font-size: 3.2rem;
+      @media screen and (max-width: 480px) {
+        font-size: 3rem;
       }
     }
 
     h2,
     p {
       max-width: 800px;
-      margin: 0 auto 50px;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
       opacity: 0.9;
       transform: translateY(20px);
       opacity: 0;
-      animation: fadeIn 1s ease-out forwards 1s;
+      animation: slideUp 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards 1s;
     }
   }
 }
 
 @keyframes slideUp {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
   to {
     transform: translateY(0);
     opacity: 1;

@@ -13,7 +13,7 @@ const Contacts: React.FC = () => {
         <p>
           If you're looking for engaging discussions or professional inquiries,
           don't hesitate to get in touch via LinkedIn. And don't forget to
-          explore my resume. Additionally, you can find all my project on my
+          explore my resume. Additionally, you can find all my projects on my
           GitHub profile
         </p>
         <ContactsButtons

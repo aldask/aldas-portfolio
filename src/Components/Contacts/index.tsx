@@ -13,11 +13,13 @@ const Contacts: React.FC = () => {
         <p>
           If you're looking for engaging discussions or professional inquiries,
           don't hesitate to get in touch via LinkedIn. And don't forget to
-          explore my resume.
+          explore my resume. Additionally, you can find all my projects on my
+          GitHub profile
         </p>
         <ContactsButtons
           linkedinUrl="https://www.linkedin.com/in/aldas-k-2ab99b1b4/"
-          resumeUrl="/"
+          resumeUrl="https://drive.google.com/file/d/1slr7g9Mfog_fPPCWwmW80JuuDpsT_9l_/view?usp=sharing"
+          githubUrl="https://github.com/aldask"
         />
       </ContactsBoxContent>
     </ContactsBox>

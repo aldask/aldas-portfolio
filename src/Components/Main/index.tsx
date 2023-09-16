@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import FlyingObject from "./FlyingObject/FlyingObject";
 import Slide from "./Slide/Slide";
 
 function Main() {
@@ -31,9 +30,6 @@ function Main() {
       className="main"
       style={{ background: setBackgroundGradient(mousePosition) }}
     >
-      <FlyingObject objectSizeMin={200} objectSizeMax={350} color="#3498db" />
-      <FlyingObject objectSizeMin={150} objectSizeMax={250} color="#2980b9" />
-      <FlyingObject objectSizeMin={75} objectSizeMax={150} color="#4a90e2" />
       <div className="main__top">
         <div className="main__top__left">
           <h1>

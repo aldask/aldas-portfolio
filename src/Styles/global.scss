@@ -15,20 +15,23 @@
 @import "../Components/Hero/HeroSide2/Styles/heroSide2";
 /* Hero component END */
 
-//Projects
+/* Projects component START */
 @import "../Components/Projects/ProjectsBox/Styles/projects-box";
 @import "../Components/Projects/ProjectCard/Styles/project-card";
+/* Projects component END */
 
-// About me
+/* About me component START */
 @import "../Components/AboutMe/AboutMeBox/Styles/about-me-box";
 @import "../Components/AboutMe/AboutMeContent/Styles/about-me-content";
 @import "../Components/AboutMe/Tech/TechStackItem/Styles/tech-stack-items";
 @import "../Components/AboutMe/Tech/TechStackList/Styles/tech-stack-item";
+/* About me component END */
 
-// Contacts
+/* Contacts component START */
 @import "../Components/Contacts/ContactsBox/Styles/contacts-box";
 @import "../Components/Contacts/ContactsBoxContent/Styles/contacts-box-content";
 @import "../Components/Contacts/ContactButtons/Styles/contacts-buttons";
+/* Contacts component END */
 
 html {
   scroll-behavior: smooth;
@@ -37,7 +40,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  font-family: $title-font;
+  font-family: $text-font;
   overflow: hidden;
 }
 

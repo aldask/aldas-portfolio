@@ -3,3 +3,16 @@
   height: 100vh;
   overflow: hidden;
 }
+
+.slide-content {
+  transition: opacity 0.5s ease-in-out;
+
+  &.active {
+    opacity: 1;
+  }
+
+  &.prev,
+  &.next {
+    opacity: 0;
+  }
+}

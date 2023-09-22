@@ -14,6 +14,7 @@
 
       @media screen and (max-width: 480px) {
         font-size: 3rem;
+        margin-bottom: 1.1rem;
       }
     }
 
@@ -26,6 +27,10 @@
       transform: translateY(20px);
       opacity: 0;
       animation: slideUp 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards 1s;
+
+      @media screen and (max-width: 480px) {
+        margin-bottom: 1.1rem;
+      }
     }
   }
 }

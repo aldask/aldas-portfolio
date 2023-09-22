@@ -25,7 +25,7 @@ const ContactsButtons: React.FC<ContactsButtonsProps> = ({
       </button>
       <button className="github">
         <a href={githubUrl} target="_blank">
-          Github
+          GitHub
         </a>
       </button>
     </div>

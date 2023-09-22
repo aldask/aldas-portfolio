@@ -18,7 +18,7 @@ const Contacts: React.FC = () => {
         </p>
         <ContactsButtons
           linkedinUrl="https://www.linkedin.com/in/aldas-k-2ab99b1b4/"
-          resumeUrl="https://drive.google.com/file/d/1slr7g9Mfog_fPPCWwmW80JuuDpsT_9l_/view?usp=sharing"
+          resumeUrl="https://drive.google.com/file/d/1qjs28XAAT3LQBLIF5OlzRb1YqFK0w4YX/view?usp=sharing"
           githubUrl="https://github.com/aldask"
         />
       </ContactsBoxContent>

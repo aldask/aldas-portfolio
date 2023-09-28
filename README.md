@@ -1,3 +1,7 @@
+<div align="center">
+    <img src="public/logo.png" alt="Logo">
+</div>
+
 # Aldas.dev Portfolio Website 🌐
 
 Welcome to my portfolio website repository! This project showcases my skills, projects, and experiences in the field of web development.

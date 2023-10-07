@@ -8,6 +8,8 @@ import JS from "../../Images/Tech/js.svg";
 import ReactIcon from "../../Images/Tech/react.svg";
 import Sass from "../../Images/Tech/sass.svg";
 import TS from "../../Images/Tech/ts.svg";
+import NextIcon from "../../Images/Tech/next.svg";
+import Tailwind from "../../Images/Tech/tailwind.svg";
 import AboutMeBox from "./AboutMeBox/AboutMeBox";
 
 const AboutMe: React.FC = () => {
@@ -15,9 +17,11 @@ const AboutMe: React.FC = () => {
     { name: "HTML5", icon: HTML5 },
     { name: "CSS3", icon: CSS3 },
     { name: "JavaScript", icon: JS },
-    { name: "React", icon: ReactIcon },
+    { name: "React.js", icon: ReactIcon },
     { name: "SASS", icon: Sass },
     { name: "TypeScript", icon: TS },
+    { name: "Next.js", icon: NextIcon },
+    { name: "Tailwind", icon: Tailwind },
   ];
 
   return (

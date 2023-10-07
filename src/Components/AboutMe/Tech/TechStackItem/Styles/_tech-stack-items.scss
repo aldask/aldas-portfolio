@@ -3,30 +3,33 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 105px;
-  height: 105px;
+  width: 85px;
+  height: 85px;
   margin: 15px;
-  padding: 15px;
-  border-radius: 20px;
+  padding: 17px;
+  border-radius: 55%;
   background: rgba(0, 0, 0, 0.1);
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   animation: fadeInUp 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.8s both;
 
   @media screen and (max-width: 980px) {
-    width: 80px;
-    height: 80px;
-    padding: 10px;
+    width: 70px;
+    height: 70px;
+    padding: 14px;
+    margin: 12px;
   }
 
   @media screen and (max-width: 490px) {
-    width: 60px;
-    height: 60px;
-    padding: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    margin: 7px;
   }
 
   @media screen and (max-width: 320px) {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
+    margin: 5px;
   }
 
   &:hover {
@@ -36,19 +39,9 @@
   }
 
   &__icon {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-
-    @media screen and (max-width: 980px) {
-      width: 35px;
-      height: 35px;
-    }
-
-    @media screen and (max-width: 490px) {
-      width: 30px;
-      height: 30px;
-    }
   }
 }
 

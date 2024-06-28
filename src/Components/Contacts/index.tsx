@@ -17,8 +17,8 @@ const Contacts: React.FC = () => {
           GitHub profile
         </p>
         <ContactsButtons
-          linkedinUrl="https://www.linkedin.com/in/aldas-k-2ab99b1b4/"
-          resumeUrl="https://drive.google.com/file/d/152cn3H060AUkpS05J99ro3-U5y2F99u1/view?usp=sharing"
+          linkedinUrl="https://www.linkedin.com/in/aldas-kasputis-2ab99b1b4/"
+          resumeUrl="https://drive.google.com/file/d/1MD5WGyECUungmQWxx2mNU_lRsOYNFrXx/view?usp=sharing"
           githubUrl="https://github.com/aldask"
         />
       </ContactsBoxContent>

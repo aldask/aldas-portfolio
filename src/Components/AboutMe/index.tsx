@@ -10,6 +10,8 @@ import Sass from "../../Images/Tech/sass.svg";
 import TS from "../../Images/Tech/ts.svg";
 import NextIcon from "../../Images/Tech/next.svg";
 import Tailwind from "../../Images/Tech/tailwind.svg";
+import Dotnet from "../../Images/Tech/dot-net-original.svg";
+
 import AboutMeBox from "./AboutMeBox/AboutMeBox";
 
 const AboutMe: React.FC = () => {
@@ -22,6 +24,7 @@ const AboutMe: React.FC = () => {
     { name: "TypeScript", icon: TS },
     { name: "Next.js", icon: NextIcon },
     { name: "Tailwind", icon: Tailwind },
+    { name: ".NET", icon: Dotnet },
   ];
 
   return (

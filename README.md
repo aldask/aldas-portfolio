@@ -60,4 +60,4 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 Created by **Aldas Kasputis**
 
 - 💻 [GitHub](https://github.com/aldask)
-- 👨‍💼 [LinkedIn](https://www.linkedin.com/in/aldas-k-2ab99b1b4)
+- 👨‍💼 [LinkedIn](https://www.linkedin.com/in/aldas-kasputis-2ab99b1b4/)

@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import { type ReactNode } from "react";
 
 interface ContactsBoxContentProps {
   title: string;
@@ -6,7 +6,11 @@ interface ContactsBoxContentProps {
   children: ReactNode;
 }
 
-const ContactsBoxContent: React.FC<ContactsBoxContentProps> = ({ title, subTitle, children }) => {
+export default function ContactsBoxContent({
+  title,
+  subTitle,
+  children,
+}: ContactsBoxContentProps) {
   return (
     <div className="contacts__content">
       <div className="contacts__content__title">
@@ -17,5 +21,3 @@ const ContactsBoxContent: React.FC<ContactsBoxContentProps> = ({ title, subTitle
     </div>
   );
 }
-
-export default ContactsBoxContent;

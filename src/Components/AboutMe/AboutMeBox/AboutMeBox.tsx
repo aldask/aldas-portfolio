@@ -1,10 +1,10 @@
-import React, { ReactNode } from "react";
+import { type ReactNode } from "react";
 
 interface AboutMeProps {
   children: ReactNode;
 }
 
-const AboutMeBox: React.FC<AboutMeProps> = ({ children }) => {
+export default function AboutMeBox({ children }: AboutMeProps) {
   return (
     <div className="about-me">
       <div className="hero-container">
@@ -12,6 +12,4 @@ const AboutMeBox: React.FC<AboutMeProps> = ({ children }) => {
       </div>
     </div>
   );
-};
-
-export default AboutMeBox;
+}

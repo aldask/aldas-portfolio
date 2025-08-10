@@ -1,30 +1,36 @@
-import React from "react";
 import AboutMeContent from "./AboutMeContent/AboutMeContent";
 import TechStackList from "./Tech/TechStackList/TechStackList";
-
-import HTML5 from "../../Images/Tech/html5.svg";
-import CSS3 from "../../Images/Tech/css3.svg";
-import JS from "../../Images/Tech/js.svg";
-import ReactIcon from "../../Images/Tech/react.svg";
-import Sass from "../../Images/Tech/sass.svg";
-import TS from "../../Images/Tech/ts.svg";
-import NextIcon from "../../Images/Tech/next.svg";
-import Tailwind from "../../Images/Tech/tailwind.svg";
-import Dotnet from "../../Images/Tech/dot-net-original.svg";
+import {
+  HTML5,
+  CSS3,
+  ReactLogo,
+  SASS,
+  TS,
+  Next,
+  Tailwind,
+  NET,
+  JS,
+  Node,
+  CSharp,
+  NETCore,
+} from "../../utils/techStackIcons";
 
 import AboutMeBox from "./AboutMeBox/AboutMeBox";
 
-const AboutMe: React.FC = () => {
+export default function AboutMe() {
   const techStack = [
     { name: "HTML5", icon: HTML5 },
     { name: "CSS3", icon: CSS3 },
-    { name: "JavaScript", icon: JS },
-    { name: "React.js", icon: ReactIcon },
-    { name: "SASS", icon: Sass },
-    { name: "TypeScript", icon: TS },
-    { name: "Next.js", icon: NextIcon },
+    { name: "SASS", icon: SASS },
     { name: "Tailwind", icon: Tailwind },
-    { name: ".NET", icon: Dotnet },
+    { name: "JavaScript", icon: JS },
+    { name: "Node", icon: Node },
+    { name: "TypeScript", icon: TS },
+    { name: "React.js", icon: ReactLogo },
+    { name: "Next.js", icon: Next },
+    { name: "C#", icon: CSharp },
+    { name: ".NET", icon: NET },
+    { name: ".NET Core", icon: NETCore },
   ];
 
   return (
@@ -33,6 +39,4 @@ const AboutMe: React.FC = () => {
       <TechStackList techStack={techStack} />
     </AboutMeBox>
   );
-};
-
-export default AboutMe;
+}

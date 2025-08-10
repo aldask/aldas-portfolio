@@ -1,10 +1,10 @@
-import React, { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 interface HeroProps {
   children: ReactNode;
 }
 
-const HeroBox: React.FC<HeroProps> = ({ children }) => {
+export default function HeroBox({ children }: HeroProps) {
   return (
     <div className="hero">
       <div className="hero-container">
@@ -12,6 +12,4 @@ const HeroBox: React.FC<HeroProps> = ({ children }) => {
       </div>
     </div>
   );
-};
-
-export default HeroBox;
+}

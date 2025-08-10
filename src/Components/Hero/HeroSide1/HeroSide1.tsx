@@ -9,7 +9,7 @@ export default function HeroSide1() {
           innovative solutions I've crafted. Whether you're interested in web
           development, user interfaces, or cutting-edge design, you've come to
           the right place. Join me on this journey as I continue to push the
-          boundaries of what's possible in the world of front-end development!
+          boundaries of what's possible in the world of full-stack development!
         </p>
       </div>
     </div>

@@ -1,17 +1,13 @@
-import React, { ReactNode } from 'react';
+import { type ReactNode } from "react";
 
 interface ContactsBoxProps {
   children: ReactNode;
 }
 
-const ContactsBox: React.FC<ContactsBoxProps> = ({ children }) => {
+export default function ContactsBox({ children }: ContactsBoxProps) {
   return (
     <section className="contacts">
-      <div className="hero-container">
-        {children}
-      </div>
+      <div className="hero-container">{children}</div>
     </section>
   );
 }
-
-export default ContactsBox;

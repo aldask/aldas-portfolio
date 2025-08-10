@@ -1,9 +1,8 @@
-import React from "react";
 import ContactsBox from "./ContactsBox/ContactsBox";
 import ContactsBoxContent from "./ContactsBoxContent/ContactsBoxContent";
 import ContactsButtons from "./ContactButtons/ContactsButtons";
 
-const Contacts: React.FC = () => {
+export default function Contacts() {
   return (
     <ContactsBox>
       <ContactsBoxContent
@@ -24,6 +23,4 @@ const Contacts: React.FC = () => {
       </ContactsBoxContent>
     </ContactsBox>
   );
-};
-
-export default Contacts;
+}

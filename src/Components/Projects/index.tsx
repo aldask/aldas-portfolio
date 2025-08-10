@@ -1,21 +1,19 @@
-import React from "react";
 import ProjectBox from "./ProjectsBox/ProjectBox";
 import ProjectCard from "./ProjectCard/ProjectCard";
 
 export interface ProjectProps {
-  title: string;
   projectTitle: string;
   projectImg: string;
   projectDescription: string;
   projectTech: string[];
   projectGithub: string;
-  projectDemo: string;
+  projectDemo?: string;
 }
 
-const Project: React.FC<ProjectProps> = ({ title, ...projectCardProps }) => (
-  <ProjectBox title={title}>
-    <ProjectCard {...projectCardProps} />
-  </ProjectBox>
-);
-
-export default Project;
+export default function Project({ ...projectCardProps }: ProjectProps) {
+  return (
+    <ProjectBox>
+      <ProjectCard {...projectCardProps} />
+    </ProjectBox>
+  );
+}

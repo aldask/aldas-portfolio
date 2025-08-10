@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
-import "./Styles/global.scss";
-import Main from "./Components/Main";
+import "./global.scss";
+import Container from "./Components/Container";
 
 function App() {
   return (
     <>
-      <Main />
+      <Container />
     </>
   );
 }

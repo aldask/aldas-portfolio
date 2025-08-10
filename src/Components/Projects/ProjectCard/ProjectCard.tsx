@@ -1,4 +1,3 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
@@ -9,17 +8,17 @@ export interface ProjectCardProps {
   projectDescription: string;
   projectTech: string[];
   projectGithub: string;
-  projectDemo: string;
+  projectDemo?: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({
+export default function ProjectCard({
   projectTitle,
   projectImg,
   projectDescription,
   projectTech,
   projectGithub,
   projectDemo,
-}) => {
+}: ProjectCardProps) {
   return (
     <div className="project-card">
       <div>
@@ -48,14 +47,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <a href={projectGithub} target="_blank">
               <FontAwesomeIcon icon={faGithub} size="lg" />
             </a>
-            <a href={projectDemo} target="_blank">
-              <FontAwesomeIcon icon={faExternalLinkAlt} size="lg" />
-            </a>
+            {projectDemo && (
+              <a href={projectDemo} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faExternalLinkAlt} size="lg" />
+              </a>
+            )}
           </div>
         </div>
       </div>
     </div>
   );
-};
-
-export default ProjectCard;
+}

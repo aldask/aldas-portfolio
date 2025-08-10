@@ -36,10 +36,24 @@
     transform: translateY(-10px) scale(1.05);
     background: rgba(0, 0, 0, 0.2);
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
-    width: 100px;
-    height: 100px;
-  }
+    width: 92px;
+    height: 92px;
 
+    @media screen and (max-width: 980px) {
+      width: 77px;
+      height: 77px;
+    }
+
+    @media screen and (max-width: 490px) {
+      width: 57px;
+      height: 57px;
+    }
+
+    @media screen and (max-width: 320px) {
+      width: 52px;
+      height: 52px;
+    }
+  }
   &__icon {
     width: 45px;
     height: 45px;

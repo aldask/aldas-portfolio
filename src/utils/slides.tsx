@@ -32,7 +32,7 @@ export const slideComponents = [
   <Project
     projectTitle="CarO"
     projectImg={CarO}
-    projectDescription="A CarO website is an online platform that allows users to rent cars for personal or business use. The website provides an easy-to-use interface for searching, comparing, and reserving cars from a wide selection of vehicles that vary in make, model, size, and price."
+    projectDescription="A CarO website is an online platform where users can rent cars for personal or business use, offering an easy interface to search, compare, and reserve from a wide selection of vehicles by make, model, size, and price."
     projectTech={[ReactLogo, TS, CSS3]}
     projectGithub="https://github.com/aldask/car-rental"
     projectDemo="https://car-rental-pied.vercel.app/"
@@ -40,7 +40,7 @@ export const slideComponents = [
   <Project
     projectTitle="Iron Gym"
     projectImg={Iron}
-    projectDescription="The Iron Gym Inclusive Fitness Experience repository, where fitness innovation meets inclusivity. This project showcases a forward-thinking approach to fitness technology, emphasizing interactive features and responsive design principles that cater to the diverse needs of every user."
+    projectDescription="The Iron Gym Inclusive Fitness Experience repository combines fitness innovation with inclusivity, showcasing interactive features and responsive design that meet the diverse needs of all users."
     projectTech={[ReactLogo, TS, SASS]}
     projectGithub="https://github.com/aldask/gym"
     projectDemo="https://gym-flax.vercel.app/"
@@ -48,9 +48,7 @@ export const slideComponents = [
   <Project
     projectTitle="Books Library"
     projectImg={BooksLib}
-    projectDescription="Library Reservation App lets users browse, search, and reserve books or audiobooks online.
-Pricing, discounts, and fees are calculated in an ASP.NET Core backend.
-The React + Tailwind frontend offers a clean, responsive user experience."
+    projectDescription="Library Reservation App allows users to browse, search, and reserve books or audiobooks online. Pricing, discounts, and fees are handled by an ASP.NET Core backend, while the React + Tailwind frontend delivers a clean, responsive experience."
     projectTech={[ReactLogo, TS, Tailwind, NETCore]}
     projectGithub="https://github.com/aldask/BooksLibraryFE"
     projectDemo="https://books-library-fe.vercel.app/"
@@ -58,9 +56,7 @@ The React + Tailwind frontend offers a clean, responsive user experience."
   <Project
     projectTitle="Groups Expense Tracker"
     projectImg={Groups}
-    projectDescription="Group Expense Splitter is a Vite powered React app with TypeScript and Tailwind CSS that helps users manage groups and split expenses easily.
-The ASP.NET Core backend handles all calculations and data storage using an EF Core in-memory database.
-It features flexible transaction splitting options and a clean, responsive interface."
+    projectDescription="Group Expense Splitter is a Vite powered React with TypeScript and Tailwind CSS that simplifies group management and expense splitting. The ASP.NET Core backend handles calculations and data storage with an EF Core in-memory database, offering flexible transaction options and a clean, responsive interface."
     projectTech={[ReactLogo, Vite, TS, Tailwind, NETCore]}
     projectGithub="https://github.com/aldask/GroupsExpenses_FE"
     projectDemo="https://groups-task-fe.vercel.app/"
@@ -68,9 +64,7 @@ It features flexible transaction splitting options and a clean, responsive inter
   <Project
     projectTitle="TV or No TV"
     projectImg={TVorNoTV}
-    projectDescription="TV or No TV is a responsive React and TypeScript app styled with Tailwind CSS that lets users browse, filter, sort, and favorite TV shows from the TVMaze API.
-It supports dark and light themes and includes fun hidden Easter eggs for a playful user experience.
-Favorites are saved locally for persistence, and the app is fully optimized for mobile and desktop."
+    projectDescription="TV or No TV is a responsive React and TypeScript app styled with Tailwind CSS that lets users browse, filter, sort, and favorite TV shows from the TVMaze API. It supports dark and light themes, includes hidden Easter eggs, saves favorites locally, and is optimized for both mobile and desktop."
     projectTech={[ReactLogo, Vite, Tailwind, TS]}
     projectGithub="https://github.com/aldask/tv-or-no-tv"
     projectDemo="https://tv-or-no-tv.vercel.app/"
@@ -78,26 +72,21 @@ Favorites are saved locally for persistence, and the app is fully optimized for 
   <Project
     projectTitle="VAT Rate Finder"
     projectImg={TaxCalc}
-    projectDescription="A simple C# console application that calculates VAT based on seller and buyer countries using predefined EU and non-EU tax rates.
-It supports dynamic input for price and countries, then outputs the tax amount and total price.
-Designed for easy tax rate lookup and calculation in cross-border transactions."
+    projectDescription="A simple C# console app that calculates VAT based on seller and buyer countries using predefined EU and non-EU rates. It supports dynamic input for price and countries, then outputs the tax amount and total price designed for easy tax lookup in cross border transactions."
     projectTech={[NETCore]}
     projectGithub="https://github.com/aldask/Tax-calculator"
   />,
   <Project
     projectTitle="Company Tax Summary Tool"
     projectImg={TaxSummary}
-    projectDescription="A C# console application that reads company tax data from a CSV file, calculates total taxes per company per month, and writes the summarized results to a new CSV.
-It uses CsvHelper for easy CSV parsing and writing, and groups taxes by company and month with date formatting.
-Designed for quick aggregation and export of tax data in a simple, efficient workflow."
+    projectDescription="A C# console app that reads company tax data from a CSV, calculates total taxes per company per month, and writes the summary to a new CSV. It uses CsvHelper for easy parsing and grouping by company and month, enabling quick tax data aggregation and export."
     projectTech={[NETCore]}
     projectGithub="https://github.com/aldask/TotalTaxesCalculator"
   />,
   <Project
     projectTitle="Infinite Gallery"
     projectImg={Gallery}
-    projectDescription="A sleek React + TypeScript gallery that fetches images from the Pexels API with infinite scrolling and favorites saved locally.
-Styled with CSS Modules, it features fully typed, reusable components and includes basic tests for reliability."
+    projectDescription="React + TypeScript gallery fetching images from the Pexels API with infinite scrolling and locally saved favorites. Styled with CSS Modules, it features fully typed, reusable components and basic tests for reliability."
     projectTech={[ReactLogo, Vite, CSS3, TS]}
     projectGithub="https://github.com/aldask/infinite-gallery-app"
     projectDemo="https://infinite-gallery-indol.vercel.app/"

@@ -1,19 +1,15 @@
-import React, { ReactNode } from "react";
+import { type ReactNode } from "react";
 
 interface ProjectBoxProps {
   children: ReactNode;
-  title: string;
 }
 
-const ProjectBox: React.FC<ProjectBoxProps> = ({ children, title }) => {
+export default function ProjectBox({ children }: ProjectBoxProps) {
   return (
     <section className="projects">
       <div className="hero-container">
-        <h2>{title}</h2>
         <div className="projects__content">{children}</div>
       </div>
     </section>
   );
-};
-
-export default ProjectBox;
+}

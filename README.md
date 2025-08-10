@@ -14,7 +14,6 @@ Welcome to my portfolio website repository! This project showcases my skills, pr
 
 - **Interactive Project Showcase:** Easily explore and learn about my projects through an interactive and visually appealing interface.
 
-
 🌐 **Live Demo:** [Here](https://aldas.vercel.app/)
 
 ## Built With 🛠️
@@ -22,7 +21,6 @@ Welcome to my portfolio website repository! This project showcases my skills, pr
 - ![React](https://img.shields.io/badge/React-000000?style=flat-square&logo=react)
 - ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript)
 - ![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=flat-square&logo=sass)
-
 
 ## Getting Started 🚀
 
@@ -43,11 +41,11 @@ Follow these steps to get started with the Portfolio website:
 3. **Run the project locally:**
 
    ```sh
-   npm start
+   npm run dev
    ```
 
 4. **Start exploring the Aldas.dev website:**
-   Open a web browser and navigate to `http://localhost:3000` to begin exploring the website.
+   Open a web browser and navigate to `http://localhost:5173` to begin exploring the website.
 
 Happy exploring!
 

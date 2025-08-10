@@ -1,16 +1,14 @@
-import React from "react";
-
 interface ContactsButtonsProps {
   linkedinUrl: string;
   resumeUrl: string;
   githubUrl: string;
 }
 
-const ContactsButtons: React.FC<ContactsButtonsProps> = ({
+export default function ContactsButtons({
   linkedinUrl,
   resumeUrl,
   githubUrl,
-}) => {
+}: ContactsButtonsProps) {
   return (
     <div className="contacts__content__buttons">
       <button className="linkedin">
@@ -30,6 +28,4 @@ const ContactsButtons: React.FC<ContactsButtonsProps> = ({
       </button>
     </div>
   );
-};
-
-export default ContactsButtons;
+}

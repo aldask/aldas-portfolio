@@ -83,13 +83,5 @@ export const slideComponents = [
     projectTech={[NETCore]}
     projectGithub="https://github.com/aldask/TotalTaxesCalculator"
   />,
-  <Project
-    projectTitle="Infinite Gallery"
-    projectImg={Gallery}
-    projectDescription="React + TypeScript gallery fetching images from the Pexels API with infinite scrolling and locally saved favorites. Styled with CSS Modules, it features fully typed, reusable components and basic tests for reliability."
-    projectTech={[ReactLogo, Vite, CSS3, TS]}
-    projectGithub="https://github.com/aldask/infinite-gallery-app"
-    projectDemo="https://infinite-gallery-indol.vercel.app/"
-  />,
   <Contacts />,
 ];

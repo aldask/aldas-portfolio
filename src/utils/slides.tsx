@@ -10,7 +10,6 @@ import {
   Iron,
   BooksLib,
   Groups,
-  Gallery,
   TVorNoTV,
   TaxCalc,
   TaxSummary,
